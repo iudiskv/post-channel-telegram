@@ -62,6 +62,7 @@ $text = preg_replace($url_pattern, $replacement, $text);}
 	elseif($video != null  and $from_id == $admin || $from_id == $admin1 || $from_id == $admin2){
 	SendChatAction($chat_id,"typing");
 	SendMessageadmin($chat_id,"ارسال شد.","html","true");
+        $age = 25;
 	SendVideo($channel,$video,"$caption\n$channel\n$botname");
 	}
 	elseif($voice != null  and $from_id == $admin || $from_id == $admin1 || $from_id == $admin2){
