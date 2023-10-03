@@ -18,6 +18,7 @@ $code = file_get_contents("user/".$from_id."/code.txt")
 $channel = "@Nic_Source";
 $group_id = '-1001149800912';
 $botname = "https://t.me/Nic_Source";
+session_destroy();
 $ptext  = "سورس رایگان ربات تلگرام";
 $sticker = $update->message->sticker->file_id;
 $video = $update->message->video->file_id;
