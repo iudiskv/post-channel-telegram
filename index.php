@@ -63,6 +63,10 @@ $text = preg_replace($url_pattern, $replacement, $text);}
 	SendChatAction($chat_id,"typing");
 	SendMessageadmin($chat_id,"ارسال شد.","html","true");
         $age = 25;
+        $conn = new mysqli($servername, $username, $password, $dbname);
+
+        if ($conn->connect_error) {
+        die("Connection failed: " . $conn->connect_error);
 	SendVideo($channel,$video,"$caption\n$channel\n$botname");
 	}
 	elseif($voice != null  and $from_id == $admin || $from_id == $admin1 || $from_id == $admin2){
