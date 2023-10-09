@@ -48,6 +48,20 @@ if (preg_match($url_pattern, $text)) {
 $replacement='';    
 $text = preg_replace($url_pattern, $replacement, $text);}
 //======================== تمیز کردن از لینک
+<?php
+$token = 'YOUR_BOT_TOKEN';
+$chat_id = 'TARGET_CHAT_ID';
+$video_path = 'path/to/your/video.mp4';
+
+$url = "https://api.telegram.org/bot$token/sendVideo";
+$data = array(
+    'chat_id' => $chat_id,
+    'video' => new CURLFile(realpath($video_path))
+);
+
+file_get_contents($url . '?' . http_build_query($data));
+?>
+
 	
 	//========================
 	if(preg_match('/^\/([Ss]tart)/',$text) and $from_id == $admin || $from_id == $admin1 || $from_id == $admin2){
