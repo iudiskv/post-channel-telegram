@@ -26,8 +26,6 @@ $voice = $update->message->voice->file_id;
 $file = $update->message->document->file_id;
 $photo2 = $update->message->photo[2]->file_id;
 $photo1 = $update->message->photo[1]->file_id;
-$photo0 = $update->message->photo[0]->file_id;
-$music = $update->message->audio->file_id;
 $text = $update->message->text;
 $caption = $update->message->caption;
 $url_pattern = '/(([\w]+:)?\/\/)?(([\d\w]|%[a-fA-f\d]{2,2})+(:([\d\w]|%[a-fA-f\d]{2,2})+)?@)?([\d\w]([-\d\w]{0,253}[\d\w])?\.)+[\w]{2,4}(:[\d]+)?(\/([-+_~.,\d\w]|%[a-fA-f\d]{2,2})*)*(\?(&?([-+_~.,\d\w]|%[a-fA-f\d]{2,2})=?)*)?(#([-+_~.,\/\d\w]|%[a-fA-f\d]{2,2})*)?$/'; 	
