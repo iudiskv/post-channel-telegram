@@ -29,7 +29,6 @@ $sticker = $update->message->sticker->file_id;
 $video = $update->message->video->file_id;
 $voice = $update->message->voice->file_id;
 $file = $update->message->document->file_id;
-$photo2 = $update->message->photo[2]->file_id;
 $photo1 = $update->message->photo[1]->file_id;
 $text = $update->message->text;
 $caption = $update->message->caption;
