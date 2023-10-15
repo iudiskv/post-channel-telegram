@@ -39,7 +39,6 @@ $url_pattern = '/(([\w]+:)?\/\/)?(([\d\w]|%[a-fA-f\d]{2,2})+(:([\d\w]|%[a-fA-f\d
 $replacement = '';
 $text= preg_replace($pattern, $replacement, $text);}
 if ( preg_match("/@[\w\-]+/", $caption))
-{$pattern = '/@[\w\-]+/';
 $replacement = '';
 $caption= preg_replace($pattern, $replacement, $caption);}
 //======================== تمیز کردن از لینک
@@ -102,7 +101,6 @@ file_get_contents($url . '?' . http_build_query($data));
 	SendAudio($channel,$music,'',"$caption\n$channel\n$botname");
 	}
 	elseif($text != null  and $from_id == $admin || $from_id == $admin1 || $from_id == $admin2){
-	SendChatAction($chat_id,"typing");
 	SendMessageadmin($chat_id,"ارسال شد.","html","true");
 	SendMessage($channel,"$text\n$ptext\n$channel\n $botname ","html","true");
   SendMessage($group_id,"$text\n$ptext\n$channel\n $botname\n-------------------------\n این پیام توسط $username عزیز  به کانال ارسال گردید","html","true");
