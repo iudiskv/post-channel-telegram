@@ -45,7 +45,6 @@ $caption= preg_replace($pattern, $replacement, $caption);}
 if (preg_match($url_pattern, $caption)) {
 $replacement='';    
 $caption = preg_replace($url_pattern, $replacement, $caption);}
-if (preg_match($url_pattern, $text)) {
 $replacement='';    
 $text = preg_replace($url_pattern, $replacement, $text);}
 //======================== تمیز کردن از لینک
