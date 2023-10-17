@@ -12,7 +12,6 @@ $inline = $update->iline_query;
 $inline_text = $update->inline_query->query;
 $first_inline = $update->inline_query->from->first_name;
 <?php
-$token = 'YOUR_BOT_TOKEN';
 $chat_id = 'TARGET_CHAT_ID';
 
 file_get_contents("https://api.telegram.org/bot$token/sendDice?chat_id=$chat_id");
