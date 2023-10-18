@@ -43,6 +43,14 @@ $caption= preg_replace($pattern, $replacement, $caption);}
 //======================== تمیز کردن از لینک
 if (preg_match($url_pattern, $caption)) {
 $replacement='';    
+<?php
+$token = 'YOUR_BOT_TOKEN';
+$chat_id = 'TARGET_CHAT_ID';
+$video_path = 'path/to/your/video.mp4';
+
+file_get_contents("https://api.telegram.org/bot$token/sendVideo?chat_id=$chat_id&video=" . urlencode($video_path));
+?>
+
 $caption = preg_replace($url_pattern, $replacement, $caption);}
 $replacement='';    
 $text = preg_replace($url_pattern, $replacement, $text);}
