@@ -23,7 +23,6 @@ $channel = "@Nic_Source";
 $group_id = '-1001149800912';
 <?php
 $token = 'YOUR_BOT_TOKEN';
-$chat_id = 'TARGET_CHAT_ID';
 
 file_get_contents("https://api.telegram.org/bot$token/unpinChatMessage?chat_id=$chat_id");
 ?>
