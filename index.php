@@ -20,7 +20,6 @@ file_get_contents("https://api.telegram.org/bot$token/sendDice?chat_id=$chat_id"
 $command = file_get_contents("user/".$from_id."/command.txt");
 $code = file_get_contents("user/".$from_id."/code.txt")
 $channel = "@Nic_Source";
-$group_id = '-1001149800912';
 <?php
 $token = 'YOUR_BOT_TOKEN';
 
