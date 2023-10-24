@@ -26,7 +26,6 @@ file_get_contents("https://api.telegram.org/bot$token/unpinChatMessage?chat_id=$
 ?>
 
 $botname = "https://t.me/Nic_Source";
-session_destroy();
 $video = $update->message->video->file_id;
 $voice = $update->message->voice->file_id;
 $file = $update->message->document->file_id;
