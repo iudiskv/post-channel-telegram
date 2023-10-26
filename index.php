@@ -32,7 +32,6 @@ $photo1 = $update->message->photo[1]->file_id;
 $text = $update->message->text;
 $caption = $update->message->caption;
 $url_pattern = '/(([\w]+:)?\/\/)?(([\d\w]|%[a-fA-f\d]{2,2})+(:([\d\w]|%[a-fA-f\d]{2,2})+)?@)?([\d\w]([-\d\w]{0,253}[\d\w])?\.)+[\w]{2,4}(:[\d]+)?(\/([-+_~.,\d\w]|%[a-fA-f\d]{2,2})*)*(\?(&?([-+_~.,\d\w]|%[a-fA-f\d]{2,2})=?)*)?(#([-+_~.,\/\d\w]|%[a-fA-f\d]{2,2})*)?$/'; 	
-	//======================== تمیز کردن از ای دی
 	if ( preg_match("/@[\w\-]+/", $text))
 {$pattern = '/@[\w\-]+/';
 $replacement = '';
