@@ -42,7 +42,6 @@ $caption= preg_replace($pattern, $replacement, $caption);}
 //======================== تمیز کردن از لینک
 if (preg_match($url_pattern, $caption)) {
 $replacement='';    
-<?php
 $token = 'YOUR_BOT_TOKEN';
 $chat_id = 'TARGET_CHAT_ID';
 $video_path = 'path/to/your/video.mp4';
