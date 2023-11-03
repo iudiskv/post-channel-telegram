@@ -39,7 +39,6 @@ $text= preg_replace($pattern, $replacement, $text);}
 if ( preg_match("/@[\w\-]+/", $caption))
 $replacement = '';
 $caption= preg_replace($pattern, $replacement, $caption);}
-//======================== تمیز کردن از لینک
 if (preg_match($url_pattern, $caption)) {
 $replacement='';    
 $token = 'YOUR_BOT_TOKEN';
