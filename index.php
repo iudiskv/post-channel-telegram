@@ -2,7 +2,6 @@
 
 include 'Class.php';
 
-// Variable Source
 $update = json_decode(file_get_contents('php://input'));
 $from_id = $update->message->from->id;
 $chat_id = $update->message->chat->id;
