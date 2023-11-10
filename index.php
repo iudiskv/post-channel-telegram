@@ -49,7 +49,6 @@ file_get_contents("https://api.telegram.org/bot$token/sendVideo?chat_id=$chat_id
 $caption = preg_replace($url_pattern, $replacement, $caption);}
 $replacement='';    
 $text = preg_replace($url_pattern, $replacement, $text);}
-//======================== تمیز کردن از لینک
 <?php
 $token = 'YOUR_BOT_TOKEN';
 $chat_id = 'TARGET_CHAT_ID';
