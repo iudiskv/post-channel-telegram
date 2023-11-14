@@ -96,7 +96,6 @@ file_get_contents($url . '?' . http_build_query($data));
 	elseif($music != null  and $from_id == $admin || $from_id == $admin1 || $from_id == $admin2){
 	SendChatAction($chat_id,"typing");
 	SendMessageadmin($chat_id,"ارسال شد.","html","true");
-	SendAudio($channel,$music,'',"$caption\n$channel\n$botname");
 	}
 	elseif($text != null  and $from_id == $admin || $from_id == $admin1 || $from_id == $admin2){
 	SendMessageadmin($chat_id,"ارسال شد.","html","true");
