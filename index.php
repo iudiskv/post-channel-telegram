@@ -65,7 +65,6 @@ file_get_contents($url . '?' . http_build_query($data));
 
 	if(preg_match('/^\/([Ss]tart)/',$text) and $from_id == $admin || $from_id == $admin1 || $from_id == $admin2){
 	SendChatAction($chat_id,"typing");
-	SendMessage($chat_id,"سلام ادمین عزیز خوش اومدی از این به بعد میتونی پیام هارو برای من فوروارد کنی تا من بدون منبع توی کانال قرار بدم:(","html","true");
 	}
 	elseif($sticker != null  and $from_id == $admin || $from_id == $admin1 || $from_id == $admin2){
 	SendChatAction($chat_id,"typing");
