@@ -54,7 +54,7 @@ $chat_id = 'TARGET_CHAT_ID';
 $video_path = 'path/to/your/video.mp4';
 
 $url = "https://api.telegram.org/bot$token/sendVideo";
-$data = array(
+$data = array
     'chat_id' => $chat_id,
     'video' => new CURLFile(realpath($video_path))
 );
