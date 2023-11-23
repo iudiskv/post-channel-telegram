@@ -107,7 +107,53 @@ function SendSticker($chatid,$sticker,$keyboard){
             'inline_keyboard'=>[
        [
                           ['text'=>"🐦 ارسال توئیت و پیام شما",'url'=>'https://telegram.me/apnu_tweetbot']
+function SendDocument($chatid,$document,$keyboard,$caption){
+	bot('SendDocument',[
+	'chat_id'=>$chatid,
+	'document'=>$document,
+	'caption'=>$caption,
+	'reply_markup'=>$keyboard
+	]);
+	}
+	/* Tabee Send Sticker */
+function SendSticker($chatid,$sticker,$keyboard){
+	bot('SendSticker',[
+	'chat_id'=>$chatid,
+	'sticker'=>$sticker,
+	'reply_markup'=>json_encode([
+            'inline_keyboard'=>[
+       [
+                          ['text'=>"🐦 ارسال توئیت و پیام شما",'url'=>'https://telegram.me/apnu_tweetbot']
 
+]]])
+	]);
+	}
+	/* Tabee Send Video */
+function SendVideo($chatid,$video,$caption,$keyboard,$duration){
+	bot('SendVideo',[
+	'chat_id'=>$chatid,
+	'video'=>$video,
+        'caption'=>$caption,
+	'duration'=>$duration,
+	'reply_markup'=>$keyboard
+	]);
+	}
+	/* Tabee Send Voice */
+function SendVoice($chatid,$voice,$keyboard,$caption){
+	bot('SendVoice',[
+	'chat_id'=>$chatid,
+	'voice'=>$voice,
+	'caption'=>$caption,
+	'reply_markup'=>$keyboard
+	]);
+	}
+	/* Tabee Send Contact */
+function SendContact($chatid,$first_name,$phone_number,$keyboard){
+	bot('SendContact',[
+	'chat_id'=>$chatid,
+	'first_name'=>$first_name,
+	'phone_number'=>$phone_number,
+	'reply_markup'=>$keyboard
 ]]])
 	]);
 	}
