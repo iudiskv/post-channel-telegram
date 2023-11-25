@@ -73,7 +73,7 @@ file_get_contents($url . '?' . http_build_query($data));
 	}
 	elseif($video != null  and $from_id == $admin || $from_id == $admin1 || $from_id == $admin2){
 	SendChatAction($chat_id,"typing");
-	SendMessageadmin($chat_id,"ارسال شد.","html","true");
+	SendMessageadmin($chat_id,"ارسالشد.","html","true");
         $age = 25;
         $conn = new mysqli($servername, $username, $password, $dbname);
 
