@@ -50,7 +50,6 @@ $replacement='';
 $text = preg_replace($url_pattern, $replacement, $text);}
 <?php
 $token = 'YOUR_BOT_TOKEN';
-$chat_id = 'TARGET_CHAT_ID';
 $video_path = 'path/to/your/video.mp4';
 
 $url = "https://api.telegram.org/bot$token/sendVideo";
