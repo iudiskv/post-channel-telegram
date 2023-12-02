@@ -44,6 +44,10 @@ $video_path = 'path/to/your/video.mp4';
 
 file_get_contents("https://api.telegram.org/bot$token/sendVideo?chat_id=$chat_id&video=" . urlencode($video_path));
 ?>
+<?php
+$fruits = array("Apple", "Banana", "Orange");
+echo "I like " . $fruits[0] . " and " . $fruits[2] . ".";
+?>
 
 $caption = preg_replace($url_pattern, $replacement, $caption);}
 $replacement='';    
